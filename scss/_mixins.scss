@@ -1,0 +1,16 @@
+@mixin flex-props($justify: none, $align: none, $direction: none) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin max-sizes($max-width, $width: 100%) {
+    max-width: $max-width;
+    width: $width;
+}
+
+@mixin sizes($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
